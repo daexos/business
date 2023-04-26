@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'toy';
+    src: url('FrankyToys-axEDg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+.wrapper{width: 500px;
+        height: 500px;
+        border-color: black;
+        border-style: solid;
+        display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;}
+
+
+          
+.frog{position: absolute;
+     background-color: pink;
+     grid-area: 1 / 1 / 6 / 6;
+     z-index: 9;}
+
+.top{grid-area: 1 / 3 / 2 / 4; 
+          position: absolute;
+          z-index: 10;
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;;}
+
+.top-text{ text-align:center; width:500px; font-family:toy; font-size:35px; transform: translateX(-15px);position: absolute; margin-top: 50px;}
+
+
+.lilypad{transform:translatey(-230px); }
+.bottom-text { grid-area: 5 / 2 / 6 / 5; transform: translateY(-50px);font-size: 28px;}
+
+path {
+  fill: transparent;
+}
+
+.top-text{text-align:center; width:500px; font-family:toy; font-size:35px; transform: translateX(-15px);position: absolute;transform: translateY(-50px);}
